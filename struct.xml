@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<index>
+    <html>
+        <page1>headings</page1>
+        <page2>lists</page2>
+    </html>
+    <css>
+        <page1>background</page1>
+        <page2>color</page2>
+    </css>
+    <js>
+        <page1>switch</page1>
+        <page2>while</page2>
+        <page3>for</page3>
+    </js>
+    <about>
+        <page1>mano</page1>
+    </about>
+</index>
+
