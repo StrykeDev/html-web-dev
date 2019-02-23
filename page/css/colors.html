@@ -90,16 +90,20 @@
 
         <hr>
 
-        <h5>Color Name</h5>
+        <h5 id="name">Color Name</h5>
         <p>
             Although colors in CSS can be applied using the methods shown below. <br>
             Using the color naming method is optional as well.<br>
             Simply type in the name of the color you would like to use.
         </p>
+        <h6>Example:</h6>
+        <h6 style="color:red; margin-left: 20px;">color: red;</h6>
+        <h6 style="color:green; margin-left: 20px;">color: green;</h6>
+        <h6 style="color:blue; margin-left: 20px;">color: blue;</h6>
 
         <hr>
 
-        <h5>Hexadecimal</h5>
+        <h5 id="hex">Hexadecimal</h5>
         <p>
             A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal
             integers specify the components of the color.<br>
@@ -110,59 +114,87 @@
             (ff)
             and the others are set to 00.
         </p>
+        <h6>Example:</h6>
+        <h6 style="color:#ff0000; margin-left: 20px;">color: #ff0000;</h6>
+        <h6 style="color:#00ff00; margin-left: 20px;">color: #00ff00;</h6>
+        <h6 style="color:#0000ff; margin-left: 20px;">color: #0000ff;</h6>
 
         <hr>
 
-        <h5>RGB</h5>
-        
-        An RGB color value is specified with the rgb() function, which has the following syntax:
+        <h5 id="rgb">RGB</h5>
+        <p>An RGB color value is specified with the rgb() function, which has the following syntax:</p>
+        <pre>rgb(red, green, blue)</pre>
+        <p>
+            Each parameter (red, green and blue) defines the intensity of the color and can be an integer between 0 and
+            255
+            or a percentage value (from 0% to 100%).
+        </p>
+        <p>
+            For example, the rgb(0,0,255) value is rendered as blue, because the blue parameter is set to its highest
+            value
+            (255) and the others are set to 0.
+        </p>
+        <h6>Example:</h6>
+        <h6 style="color:rgb(255, 0, 0); margin-left: 20px;">color: rgb(255, 0, 0);</h6>
+        <h6 style="color:rgb(0, 150, 0); margin-left: 20px;">color: rgb(0, 150, 0);</h6>
+        <h6 style="color:rgb(0, 0, 255); margin-left: 20px;">color: rgb(0, 0, 100%);</h6>
 
-        rgb(red, green, blue)
+        <hr>
 
-        Each parameter (red, green and blue) defines the intensity of the color and can be an integer between 0 and 255
-        or a percentage value (from 0% to 100%).
+        <h5 id="hsl">HSL</h5>
+        <p>
+            HSL stands for hue, saturation, and lightness - and represents a cylindrical-coordinate representation of
+            colors.
+        </p>
+        <p>
+            An HSL color value is specified with the hsl() function, which has the following syntax:
+        </p>
+        <pre>hsl(hue, saturation, lightness)</pre>
+        <p>
+            Hue is a degree on the color wheel (from 0 to 360) - 0 is red, 120 is green, 240 is blue, 360 is red.<br>
+            Saturation is
+            a percentage value, 0% means a shade of gray and 100% is the full color.<br>
+            Lightness is also a percentage, 0% is black, 100% is white.
+        </p>
+        <h6>Example:</h6>
+        <h6 style="color:hsl(0, 100%, 75%); margin-left: 20px;">color: hsl(0, 100%, 75%);</h6>
+        <h6 style="color:hsl(120, 100%, 50%); margin-left: 20px;">color: hsl(120, 100%, 50%);</h6>
+        <h6 style="color:hsl(240, 50%, 25%); margin-left: 20px;">color: hsl(240, 50%, 25%);</h6>
 
-        For example, the rgb(0,0,255) value is rendered as blue, because the blue parameter is set to its highest value
-        (255) and the others are set to 0.
+        <hr>
 
+        <h5 id="rgba">RGBA</h5>
+        <p>
+            RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity
+            of
+            the object.
+        </p>
+        <p>An RGBA color is specified with the rgba() function, which has the following syntax:</p>
+        <pre>rgba(red, green, blue, alpha)</pre>
+        <p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+        <h6>Example:</h6>
+        <h6 style="color:rgba(255, 0, 0, 1); margin-left: 20px;">color: rgba(255, 0, 0, 1.0);</h6>
+        <h6 style="color:rgba(255, 0, 0, .5); margin-left: 20px;">color: rgba(255, 0, 0, 0.5);</h6>
+        <h6 style="color:rgba(255, 0, 0, .2); margin-left: 20px;">color: rgba(255, 0, 0, 0.2);</h6>
 
+        <hr>
 
-        HSL Colors
-        HSL stands for hue, saturation, and lightness - and represents a cylindrical-coordinate representation of
-        colors.
-
-        An HSL color value is specified with the hsl() function, which has the following syntax:
-
-        hsl(hue, saturation, lightness)
-
-        Hue is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue. Saturation is
-        a percentage value; 0% means a shade of gray and 100% is the full color. Lightness is also a percentage; 0% is
-        black, 100% is white.
-        
-        RGBA Colors
-        RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of
-        the object.
-
-        An RGBA color is specified with the rgba() function, which has the following syntax:
-
-        rgba(red, green, blue, alpha)
-
-        The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
-
-
-
-        HSLA Colors
-        HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity of
-        the object.
-
-        An HSLA color value is specified with the hsla() function, which has the following syntax:
-
-        hsla(hue, saturation, lightness, alpha)
-
-        The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
-
-
-
+        <h5 id="hsla">HSLA</h5>
+        <p>
+            HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity
+            of
+            the object.
+        </p>
+        <p>
+            An HSLA color value is specified with the hsla() function, which has the following syntax:
+        </p>
+        <pre>hsla(hue, saturation, lightness, alpha)</pre>
+        <p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+        <h6>Example:</h6>
+        <h6 style="color:hsla(0, 100%, 75%, 1); margin-left: 20px;">color: hsla(0, 100%, 75%, 1.0);</h6>
+        <h6 style="color:hsla(0, 100%, 75%, 0.5); margin-left: 20px;">color: hsla(0, 100%, 75%, 0.5);</h6>
+        <h6 style="color:hsla(0, 100%, 75%, 0.2); margin-left: 20px;">color: hsla(0, 100%, 75%, 0.2);</h6>
+        <hr>
     </div>
 
     <footer id="footer">
