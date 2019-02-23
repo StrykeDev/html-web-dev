@@ -15,9 +15,8 @@ p {
     font-size: 12pt;
 }
 
-.copyright {
-    color: #858585;
-    font-size: 2pt;
+hr {
+    margin: 100px 0px 100px 0px !important;
 }
 
 #header {

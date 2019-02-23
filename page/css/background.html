@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Home
+    </title>
+    <meta name="description" content="Free web development training.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-sm">
+            <a class="navbar-brand" href="/index.html">
+                <img class="logo" src="/images/logo/logo-webdev.png" alt="" height="32px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="/images/misc/menu-btn.png" alt="" height="32px">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            HTML
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/page/html/heading.html">Heading</a>
+                            <a class="dropdown-item" href="/page/html/lists.html">Lists</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CSS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/page/css/background.html">Background</a>
+                            <a class="dropdown-item" href="/page/css/colors.html">Colors</a>
+                            <a class="dropdown-item" href="/page/css/links.html">Links</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            JavaScript
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/page/js/switch.html">Switch</a>
+                            <a class="dropdown-item" href="/page/js/while.html">While</a>
+                            <a class="dropdown-item" href="/page/js/for.html">For</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content" class="container shadow">
+        <h3>Background</h3>
+        <p>
+            Background properties are used to define the background effects for elements.<br>
+            The most common properties are:
+        </p>
+        <ul>
+            <li><a href="#background-color">background-color</a></li>
+            <li><a href="#background-image">background-image</a></li>
+            <li><a href="#background-repeat">background-repeat</a></li>
+            <li><a href="#background-attachment">background-attachment</a></li>
+            <li><a href="#background-position">background-position</a></li>
+        </ul>
+
+        <hr>
+
+        <h5 id="background-color">background-color</h5>
+        <p>
+            The background-color property specifies the background color of an element.<br>
+            The background color for a page can be set like this:
+        </p>
+        <pre style="background-color: lightblue;">
+
+    body {
+        background-color: lightblue;
+    }
+        </pre>
+
+        <hr>
+
+        <h5 id="background-image">background-image</h5>
+        <p>
+            The background-image property specifies an image to use as the background of an element.<br>
+            By default, the image is repeated so it covers the entire element.<br>
+            The background image for a page can be set like this:<br>
+        </p>
+        <pre
+            style="background-image: url('/images/misc/css-background-ex-image.png'); background-size: cover; background-position: center bottom;">
+
+    body {
+        background-image: url("snowboarding.png");
+    }
+
+
+
+
+        </pre>
+
+        <hr>
+
+        <h5 id="background-repeat">background-repeat</h5>
+        <p>
+            By default, the background-image property repeats an image both horizontally and vertically.<br>
+            If the image is repeated only horizontally (background-repeat: repeat-x;), the background will look like
+            this:
+        </p>
+
+        <pre
+            style="background-image: url('/images/misc/css-background-ex-repeat.png'); background-size: 50%; background-repeat: no-repeat; background-position: center;">
+
+    body {
+        background-image: url("plane.png");
+        background-position: center;
+
+        background-repeat: no-repeat;
+    }
+    
+        </pre>
+
+        <hr>
+
+        <h5 id="background-attachment">background-attachment</h5>
+        <p>
+            The background-attachment property sets whether a background image scrolls with the rest of the page, or is
+            fixed.
+        </p>
+        <p>
+            To specify that the background image should be fixed (will not scroll with the rest of the page), use the
+            background-attachment property.
+        </p>
+        <pre
+            style="background-image: url('/images/misc/css-background-ex-image.png'); background-size: cover; background-attachment: fixed; background-position: right center;">
+
+    body {
+        background-image: url("snowboarding.png");
+
+        background-attachment: fixed;
+    }
+
+
+
+
+        </pre>
+
+        <hr>
+
+        <h5 id="background-position">background-position</h5>
+        <p>
+            The background-position property sets the starting position of a background image.<br>
+            By default, a background-image is placed at the top-left corner of an element, and repeated both vertically
+            and
+            horizontally.
+        </p>
+        <p>
+            To specify that the background image should be position on middle-right use:
+        </p>
+        <pre
+            style="background-image: url('/images/misc/css-background-ex-repeat.png'); background-size: 50%; background-repeat: no-repeat; background-position: right center;">
+
+    body {
+        background-image: url("plane.png");
+        background-repeat: no-repeat;
+
+        background-position: right center;
+    }
+    
+        </pre>
+
+        <hr>
+        
+    </div>
+
+    <footer id="footer">
+        <div class="container text-center">
+            <img src="/images/logo/logo-webdev-gray.png" alt="" height="25px">
+            <p>ManoSites © Copyright 2019-2025. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
