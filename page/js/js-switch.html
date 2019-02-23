@@ -26,7 +26,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="SwitchEx();">
     <header id="header">
         <nav class="navbar navbar-expand-sm">
             <a class="navbar-brand" href="/index.html">
@@ -45,8 +45,8 @@
                             HTML
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/html/heading.html">Heading</a>
-                            <a class="dropdown-item" href="/page/html/lists.html">Lists</a>
+                            <a class="dropdown-item" href="/page/html/html-heading.html">Heading</a>
+                            <a class="dropdown-item" href="/page/html/html-lists.html">Lists</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -55,9 +55,9 @@
                             CSS
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/css/background.html">Background</a>
-                            <a class="dropdown-item" href="/page/css/colors.html">Colors</a>
-                            <a class="dropdown-item" href="/page/css/links.html">Links</a>
+                            <a class="dropdown-item" href="/page/css/css-background.html">Background</a>
+                            <a class="dropdown-item" href="/page/css/css-colors.html">Colors</a>
+                            <a class="dropdown-item" href="/page/css/css-links.html">Links</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -66,9 +66,9 @@
                             JavaScript
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/js/switch.html">Switch</a>
-                            <a class="dropdown-item" href="/page/js/while.html">While</a>
-                            <a class="dropdown-item" href="/page/js/for.html">For</a>
+                            <a class="dropdown-item" href="/page/js/js-switch.html">Switch</a>
+                            <a class="dropdown-item" href="/page/js/js-while.html">While</a>
+                            <a class="dropdown-item" href="/page/js/js-for.html">For</a>
                         </div>
                     </li>
                 </ul>
@@ -76,26 +76,73 @@
         </nav>
     </header>
 
-    <div id="content" class="container shadow">
-        <h3>H1-6 Headings</h3>
+    <div id="content" class="container shadow" >
+        <script>
+            function SwitchEx() {
+                switch (new Date().getDay()) {
+                    case 0:
+                        day = "Sunday";
+                        break;
+                    case 1:
+                        day = "Monday";
+                        break;
+                    case 2:
+                        day = "Tuesday";
+                        break;
+                    case 3:
+                        day = "Wednesday";
+                        break;
+                    case 4:
+                        day = "Thursday";
+                        break;
+                    case 5:
+                        day = "Friday";
+                        break;
+                    case 6:
+                        day = "Saturday";
+                }
+                document.getElementById("switch-ex-result").innerHTML = day;
+            }
+        </script>
+        <h3>Switch</h3>
+        <p>The switch statement is used to perform different actions based on different conditions.</p>
         <p>
-            The &lt;h1&gt; to &lt;h6&gt; tags are used to define HTML headings.<br>
-            &lt;h1&gt; tag should be used for main headings, followed by &lt;h2&gt;, then the less important &lt;h3&gt;,
-            and so on.
+            The switch expression is evaluated once.<br>
+            The value of the expression is compared with the values of each case.<br>
+            If there is a match, the associated block of code is executed.<br>
         </p>
+
+        <h6>Example:</h6>
         <p>
-            Users skim your pages by its headings so it is important to use headings to show the document structure.
+            The getDay() method returns the weekday as a number between 0 and 6. (Sunday=0, Monday=1, Tuesday=2 ..)<br>
+            This example uses the weekday number to calculate the weekday name:
         </p>
-        <h1>This is heading 1.</h1>
-        <h2>This is heading 2.</h2>
-        <h3>This is heading 3.</h3>
-        <h4>This is heading 4.</h4>
-        <h5>This is heading 5.</h5>
-        <h6>This is heading 6.</h6>
-        <p>This is a normal paragraph.</p>
-        <p class="alert alert-warning" role="alert">
-            <b>Note: </b>Use HTML headings for headings only. Don't use headings to make text BIG or bold.
-        </p>
+        <pre>
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday";
+    }
+        </pre>
+        <h6>Result:</h6>
+        <p id="switch-ex-result"></p>
 
         <hr>
     </div>

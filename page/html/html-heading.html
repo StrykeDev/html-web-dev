@@ -45,8 +45,8 @@
                             HTML
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/html/heading.html">Heading</a>
-                            <a class="dropdown-item" href="/page/html/lists.html">Lists</a>
+                            <a class="dropdown-item" href="/page/html/html-heading.html">Heading</a>
+                            <a class="dropdown-item" href="/page/html/html-lists.html">Lists</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -55,9 +55,9 @@
                             CSS
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/css/background.html">Background</a>
-                            <a class="dropdown-item" href="/page/css/colors.html">Colors</a>
-                            <a class="dropdown-item" href="/page/css/links.html">Links</a>
+                            <a class="dropdown-item" href="/page/css/css-background.html">Background</a>
+                            <a class="dropdown-item" href="/page/css/css-colors.html">Colors</a>
+                            <a class="dropdown-item" href="/page/css/css-links.html">Links</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -66,9 +66,9 @@
                             JavaScript
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/js/switch.html">Switch</a>
-                            <a class="dropdown-item" href="/page/js/while.html">While</a>
-                            <a class="dropdown-item" href="/page/js/for.html">For</a>
+                            <a class="dropdown-item" href="/page/js/js-switch.html">Switch</a>
+                            <a class="dropdown-item" href="/page/js/js-while.html">While</a>
+                            <a class="dropdown-item" href="/page/js/js-for.html">For</a>
                         </div>
                     </li>
                 </ul>
@@ -77,86 +77,25 @@
     </header>
 
     <div id="content" class="container shadow">
-        <style>
-            .ex-link {
-                margin: 20px;
-            }
-
-            .ex-link:link {
-                color: green !important;
-            }
-
-            .ex-link:visited {
-                color: #008cff !important;
-            }
-
-            .ex-link:hover {
-                color: lightgreen !important;
-            }
-
-            .ex-link:active {
-                color: blue !important;
-            }
-        </style>
-
-        <h3>Links</h3>
+        <h3>H1-6 Headings</h3>
         <p>
-            Links can be styled with any CSS property (e.g. color, font-family, background, etc.).<br>
-            In addition, links can be styled differently depending on what state they are in.
+            The &lt;h1&gt; to &lt;h6&gt; tags are used to define HTML headings.<br>
+            &lt;h1&gt; tag should be used for main headings, followed by &lt;h2&gt;, then the less important &lt;h3&gt;,
+            and so on.
         </p>
-        <p>When setting the style for several link states, there are some order rules:</p>
-        <ul>
-            <li>a:hover MUST come after a:link and a:visited</li>
-            <li>a:active MUST come after a:hover</li>
-        </ul>
-        <p>The four links states are:</p>
-        <ul>
-            <li><a href="#link">a:link</a></li>
-            <li><a href="#visited">a:visited</a></li>
-            <li><a href="#hover">a:hover</a></li>
-            <li><a href="#active">a:active</a></li>
-        </ul>
-
-        <hr>
-
-        <h5 id="link">a:link</h5>
-        <p>A normal\unvisited link, The style will be apply if the user haven't clicked or hover the mouse over it.</p>
-        <h6>Example:</h6>
-        <a class="ex-link" href="">Click Here!</a>
-        <div class="alert alert-warning">
-            <b>Note:</b> We have changed the link color to green, If the link isn't green that's mean that you already
-            clicked it.
-        </div>
-
-        <hr>
-
-        <h5 id="visited">a:visited</h5>
-        <p>A link the user has visited, The style will be apply if the user clicked on the link.</p>
-        <h6>Example:</h6>
-        <a class="ex-link" href="">Click Here!</a>
-        <div class="alert alert-warning">
-            <b>Note:</b> We have changed the <b>visited</b> color to light blue.
-        </div>
-
-        <hr>
-
-        <h5 id="hover">a:hover</h5>
-        <p>The style will be apply if the user hover the mouse over the link.</p>
-        <h6>Example:</h6>
-        <a class="ex-link" href="">Hover Here!</a>
-        <div class="alert alert-warning">
-            <b>Note:</b> We have changed the <b>hover</b> color to light green.
-        </div>
-
-        <hr>
-
-        <h5 id="active">a:active</h5>
-        <p>The style will be apply if the user holding the link.</p>
-        <h6>Example:</h6>
-        <a class="ex-link" href="">Click And Hold Here!</a>
-        <div class="alert alert-warning">
-            <b>Note:</b> We have changed the <b>active</b> color to dark blue.
-        </div>
+        <p>
+            Users skim your pages by its headings so it is important to use headings to show the document structure.
+        </p>
+        <h1>This is heading 1.</h1>
+        <h2>This is heading 2.</h2>
+        <h3>This is heading 3.</h3>
+        <h4>This is heading 4.</h4>
+        <h5>This is heading 5.</h5>
+        <h6>This is heading 6.</h6>
+        <p>This is a normal paragraph.</p>
+        <p class="alert alert-warning" role="alert">
+            <b>Note: </b>Use HTML headings for headings only. Don't use headings to make text BIG or bold.
+        </p>
 
         <hr>
     </div>

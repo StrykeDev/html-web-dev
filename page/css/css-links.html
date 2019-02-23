@@ -45,8 +45,8 @@
                             HTML
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/html/heading.html">Heading</a>
-                            <a class="dropdown-item" href="/page/html/lists.html">Lists</a>
+                            <a class="dropdown-item" href="/page/html/html-heading.html">Heading</a>
+                            <a class="dropdown-item" href="/page/html/html-lists.html">Lists</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -55,9 +55,9 @@
                             CSS
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/css/background.html">Background</a>
-                            <a class="dropdown-item" href="/page/css/colors.html">Colors</a>
-                            <a class="dropdown-item" href="/page/css/links.html">Links</a>
+                            <a class="dropdown-item" href="/page/css/css-background.html">Background</a>
+                            <a class="dropdown-item" href="/page/css/css-colors.html">Colors</a>
+                            <a class="dropdown-item" href="/page/css/css-links.html">Links</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -66,9 +66,9 @@
                             JavaScript
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/js/switch.html">Switch</a>
-                            <a class="dropdown-item" href="/page/js/while.html">While</a>
-                            <a class="dropdown-item" href="/page/js/for.html">For</a>
+                            <a class="dropdown-item" href="/page/js/js-switch.html">Switch</a>
+                            <a class="dropdown-item" href="/page/js/js-while.html">While</a>
+                            <a class="dropdown-item" href="/page/js/js-for.html">For</a>
                         </div>
                     </li>
                 </ul>
@@ -77,41 +77,90 @@
     </header>
 
     <div id="content" class="container shadow">
+        <style>
+            .ex-link {
+                margin: 20px;
+            }
 
-        <h3>For Loop</h3>
-        <p>The for loop has the following syntax:</p>
-        <pre>
-    for (statement 1; statement 2; statement 3) {
-        // code block to be executed
-    }</pre>
-        <p>Statement 1 is executed (one time) before the execution of the code block.</p>
-        <p>Statement 2 defines the condition for executing the code block.</p>
-        <p>Statement 3 is executed (every time) after the code block has been executed.</p>
+            .ex-link:link {
+                color: green !important;
+            }
 
-        <br><br><br>
+            .ex-link:visited {
+                color: #008cff !important;
+            }
 
+            .ex-link:hover {
+                color: lightgreen !important;
+            }
+
+            .ex-link:active {
+                color: blue !important;
+            }
+        </style>
+
+        <h3>Links</h3>
+        <p>
+            Links can be styled with any CSS property (e.g. color, font-family, background, etc.).<br>
+            In addition, links can be styled differently depending on what state they are in.
+        </p>
+        <p>When setting the style for several link states, there are some order rules:</p>
+        <ul>
+            <li>a:hover MUST come after a:link and a:visited</li>
+            <li>a:active MUST come after a:hover</li>
+        </ul>
+        <p>The four links states are:</p>
+        <ul>
+            <li><a href="#link">a:link</a></li>
+            <li><a href="#visited">a:visited</a></li>
+            <li><a href="#hover">a:hover</a></li>
+            <li><a href="#active">a:active</a></li>
+        </ul>
+
+        <hr>
+
+        <h5 id="link">a:link</h5>
+        <p>A normal\unvisited link, The style will be apply if the user haven't clicked or hover the mouse over it.</p>
         <h6>Example:</h6>
-        <pre>
-    for (i = 0; i &lt; 5; i++) {
-        text += "The number is " + i + "&lt;br&gt;";
-    }</pre>
-        <h6>Result:</h6>
-        <p>
-            The number is 0<br>
-            The number is 1<br>
-            The number is 2<br>
-            The number is 3<br>
-            The number is 4<br>
-        </p>
-        <p>
-            From the example above, you can read:
-            Statement 1 sets a variable before the loop starts (var i = 0).<br>
-            Statement 2 defines the condition for the loop to run ('i' must be less than 5).<br>
-            Statement 3 increases a value (i++) each time the code block in the loop has been executed.
-        </p>
+        <a class="ex-link" href="">Click Here!</a>
+        <div class="alert alert-warning">
+            <b>Note:</b> We have changed the link color to green, If the link isn't green that's mean that you already
+            clicked it.
+        </div>
+
+        <hr>
+
+        <h5 id="visited">a:visited</h5>
+        <p>A link the user has visited, The style will be apply if the user clicked on the link.</p>
+        <h6>Example:</h6>
+        <a class="ex-link" href="">Click Here!</a>
+        <div class="alert alert-warning">
+            <b>Note:</b> We have changed the <b>visited</b> color to light blue.
+        </div>
+
+        <hr>
+
+        <h5 id="hover">a:hover</h5>
+        <p>The style will be apply if the user hover the mouse over the link.</p>
+        <h6>Example:</h6>
+        <a class="ex-link" href="">Hover Here!</a>
+        <div class="alert alert-warning">
+            <b>Note:</b> We have changed the <b>hover</b> color to light green.
+        </div>
+
+        <hr>
+
+        <h5 id="active">a:active</h5>
+        <p>The style will be apply if the user holding the link.</p>
+        <h6>Example:</h6>
+        <a class="ex-link" href="">Click And Hold Here!</a>
+        <div class="alert alert-warning">
+            <b>Note:</b> We have changed the <b>active</b> color to dark blue.
+        </div>
 
         <hr>
     </div>
+
     <footer id="footer">
         <div class="container text-center">
             <img src="/images/logo/logo-webdev-gray.png" alt="" height="25px">

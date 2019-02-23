@@ -26,7 +26,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body onload="SwitchEx();">
+<body>
     <header id="header">
         <nav class="navbar navbar-expand-sm">
             <a class="navbar-brand" href="/index.html">
@@ -45,8 +45,8 @@
                             HTML
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/html/heading.html">Heading</a>
-                            <a class="dropdown-item" href="/page/html/lists.html">Lists</a>
+                            <a class="dropdown-item" href="/page/html/html-heading.html">Heading</a>
+                            <a class="dropdown-item" href="/page/html/html-lists.html">Lists</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -55,9 +55,9 @@
                             CSS
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/css/background.html">Background</a>
-                            <a class="dropdown-item" href="/page/css/colors.html">Colors</a>
-                            <a class="dropdown-item" href="/page/css/links.html">Links</a>
+                            <a class="dropdown-item" href="/page/css/css-background.html">Background</a>
+                            <a class="dropdown-item" href="/page/css/css-colors.html">Colors</a>
+                            <a class="dropdown-item" href="/page/css/css-links.html">Links</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -66,9 +66,9 @@
                             JavaScript
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/js/switch.html">Switch</a>
-                            <a class="dropdown-item" href="/page/js/while.html">While</a>
-                            <a class="dropdown-item" href="/page/js/for.html">For</a>
+                            <a class="dropdown-item" href="/page/js/js-switch.html">Switch</a>
+                            <a class="dropdown-item" href="/page/js/js-while.html">While</a>
+                            <a class="dropdown-item" href="/page/js/js-for.html">For</a>
                         </div>
                     </li>
                 </ul>
@@ -76,73 +76,29 @@
         </nav>
     </header>
 
-    <div id="content" class="container shadow" >
-        <script>
-            function SwitchEx() {
-                switch (new Date().getDay()) {
-                    case 0:
-                        day = "Sunday";
-                        break;
-                    case 1:
-                        day = "Monday";
-                        break;
-                    case 2:
-                        day = "Tuesday";
-                        break;
-                    case 3:
-                        day = "Wednesday";
-                        break;
-                    case 4:
-                        day = "Thursday";
-                        break;
-                    case 5:
-                        day = "Friday";
-                        break;
-                    case 6:
-                        day = "Saturday";
-                }
-                document.getElementById("switch-ex-result").innerHTML = day;
-            }
-        </script>
-        <h3>Switch</h3>
-        <p>The switch statement is used to perform different actions based on different conditions.</p>
-        <p>
-            The switch expression is evaluated once.<br>
-            The value of the expression is compared with the values of each case.<br>
-            If there is a match, the associated block of code is executed.<br>
-        </p>
+    <div id="content" class="container shadow">
+
+        <h3>While Loop</h3>
+        <p>The while loop loops through a block of code as long as a specified condition is true.</p>
 
         <h6>Example:</h6>
-        <p>
-            The getDay() method returns the weekday as a number between 0 and 6. (Sunday=0, Monday=1, Tuesday=2 ..)<br>
-            This example uses the weekday number to calculate the weekday name:
-        </p>
         <pre>
-    switch (new Date().getDay()) {
-        case 0:
-            day = "Sunday";
-            break;
-        case 1:
-            day = "Monday";
-            break;
-        case 2:
-            day = "Tuesday";
-            break;
-        case 3:
-            day = "Wednesday";
-            break;
-        case 4:
-            day = "Thursday";
-            break;
-        case 5:
-            day = "Friday";
-            break;
-        case 6:
-            day = "Saturday";
-    }
-        </pre>
+    while (i &lt; 5) {
+        text += "The number is " + i + "&lt;br&gt;";
+        i++;
+    }</pre>
         <h6>Result:</h6>
-        <p id="switch-ex-result"></p>
+        <p>
+            The number is 0<br>
+            The number is 1<br>
+            The number is 2<br>
+            The number is 3<br>
+            The number is 4<br>
+        </p>
+        <p>
+            In the example above, the code in the loop will run, over and over again, as long as variable 'i' is
+            less than 5.
+        </p>
 
         <hr>
     </div>
