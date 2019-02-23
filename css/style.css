@@ -1,12 +1,25 @@
 
 body {
+    padding-bottom:100px;
+
     font-family: Calibri, sans-serif;
     color: #000000;
+    
+    background-image: url('/images/background/background-poly-white.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 p {
     color: #202020;
-    font-size: 10pt;
+    font-size: 12pt;
+}
+
+.copyright {
+    color: #858585;
+    font-size: 2pt;
 }
 
 #header {
@@ -14,7 +27,15 @@ p {
 }
 
 #footer {
-    padding: 10px 0 10px 0;
+    height: 100px;
+    padding: 10px;
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+
     background: linear-gradient(#ececec, #fafafa);
 }
 
@@ -24,6 +45,8 @@ p {
 }
 
 #content {
-    padding: 25px;
+    padding: 50px 25px 100px 25px;
+    bottom: 0px;
+    min-height: 100%;
     background-color: #fafafa;
 }
