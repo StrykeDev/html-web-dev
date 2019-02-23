@@ -41,3 +41,20 @@ hr {
     min-height: 100%;
     background-color: #fafafa;
 }
+
+#banner {
+    height: 200px;
+    background-image: url('/images/home/banner.png');
+    background-size: cover;
+    background-position: center;
+
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: rgb(0, 123, 255);
+}
+
+.cards img {
+    width: 100%;
+    max-width: 200px;
+    padding-bottom: 20px; 
+}
