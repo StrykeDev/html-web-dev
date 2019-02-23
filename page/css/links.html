@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Home
+    </title>
+    <meta name="description" content="Free web development training.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-sm">
+            <a class="navbar-brand" href="/index.html">
+                <img class="logo" src="/images/logo/logo-webdev.png" alt="" height="32px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="/images/misc/menu-btn.png" alt="" height="32px">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            HTML
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/page/html/heading.html">Heading</a>
+                            <a class="dropdown-item" href="/page/html/lists.html">Lists</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CSS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/page/css/background.html">Background</a>
+                            <a class="dropdown-item" href="/page/css/colors.html">Colors</a>
+                            <a class="dropdown-item" href="/page/css/links.html">Links</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            JavaScript
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/page/js/switch.html">Switch</a>
+                            <a class="dropdown-item" href="/page/js/while.html">While</a>
+                            <a class="dropdown-item" href="/page/js/for.html">For</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content" class="container shadow">
+        <style>
+            .ex-link {
+                margin: 20px;
+            }
+
+            .ex-link:link {
+                color: green !important;
+            }
+
+            .ex-link:visited {
+                color: #008cff !important;
+            }
+
+            .ex-link:hover {
+                color: lightgreen !important;
+            }
+
+            .ex-link:active {
+                color: blue !important;
+            }
+        </style>
+
+        <h3>Links</h3>
+        <p>
+            Links can be styled with any CSS property (e.g. color, font-family, background, etc.).<br>
+            In addition, links can be styled differently depending on what state they are in.
+        </p>
+        <p>When setting the style for several link states, there are some order rules:</p>
+        <ul>
+            <li>a:hover MUST come after a:link and a:visited</li>
+            <li>a:active MUST come after a:hover</li>
+        </ul>
+        <p>The four links states are:</p>
+        <ul>
+            <li><a href="#link">a:link</a></li>
+            <li><a href="#visited">a:visited</a></li>
+            <li><a href="#hover">a:hover</a></li>
+            <li><a href="#active">a:active</a></li>
+        </ul>
+
+        <hr>
+
+        <h5 id="link">a:link</h5>
+        <p>A normal\unvisited link, The style will be apply if the user haven't clicked or hover the mouse over it.</p>
+        <h6>Example:</h6>
+        <a class="ex-link" href="">Click Here!</a>
+        <div class="alert alert-warning">
+            <b>Note:</b> We have changed the link color to green, If the link isn't green that's mean that you already
+            clicked it.
+        </div>
+
+        <hr>
+
+        <h5 id="visited">a:visited</h5>
+        <p>A link the user has visited, The style will be apply if the user clicked on the link.</p>
+        <h6>Example:</h6>
+        <a class="ex-link" href="">Click Here!</a>
+        <div class="alert alert-warning">
+            <b>Note:</b> We have changed the <b>visited</b> color to light blue.
+        </div>
+
+        <hr>
+
+        <h5 id="hover">a:hover</h5>
+        <p>The style will be apply if the user hover the mouse over the link.</p>
+        <h6>Example:</h6>
+        <a class="ex-link" href="">Hover Here!</a>
+        <div class="alert alert-warning">
+            <b>Note:</b> We have changed the <b>hover</b> color to light green.
+        </div>
+
+        <hr>
+
+        <h5 id="active">a:active</h5>
+        <p>The style will be apply if the user holding the link.</p>
+        <h6>Example:</h6>
+        <a class="ex-link" href="">Click And Hold Here!</a>
+        <div class="alert alert-warning">
+            <b>Note:</b> We have changed the <b>active</b> color to dark blue.
+        </div>
+
+        <hr>
+    </div>
+
+    <footer id="footer">
+        <div class="container text-center">
+            <img src="/images/logo/logo-webdev-gray.png" alt="" height="25px">
+            <p>ManoSites © Copyright 2019-2025. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
