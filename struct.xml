@@ -8,6 +8,7 @@
     <css>
         <page1>background</page1>
         <page2>color</page2>
+        <page3>links</page3>
     </css>
     <js>
         <page1>switch</page1>
