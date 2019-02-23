@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>
-        JavaScript - For
+        HTML - Lists
     </title>
     <meta name="description" content="Free web development training.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -29,12 +29,12 @@
 <body>
     <header id="header">
         <nav class="navbar navbar-expand-sm">
-            <a class="navbar-brand" href="/index.html">
-                <img class="logo" src="/images/logo/logo-webdev.png" alt="" height="32px">
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../images/logo/logo-webdev.png" alt="" height="32px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="/images/misc/menu-btn.png" alt="" height="32px">
+                <img src="../images/misc/menu-btn.png" alt="" height="32px">
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,8 +45,8 @@
                             HTML
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/html/html-heading.html">Heading</a>
-                            <a class="dropdown-item" href="/page/html/html-lists.html">Lists</a>
+                            <a class="dropdown-item" href="html-heading.html">Heading</a>
+                            <a class="dropdown-item" href="html-lists.html">Lists</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -55,9 +55,9 @@
                             CSS
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/css/css-background.html">Background</a>
-                            <a class="dropdown-item" href="/page/css/css-colors.html">Colors</a>
-                            <a class="dropdown-item" href="/page/css/css-links.html">Links</a>
+                            <a class="dropdown-item" href="css-background.html">Background</a>
+                            <a class="dropdown-item" href="css-colors.html">Colors</a>
+                            <a class="dropdown-item" href="css-links.html">Links</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -66,9 +66,9 @@
                             JavaScript
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/js/js-switch.html">Switch</a>
-                            <a class="dropdown-item" href="/page/js/js-while.html">While</a>
-                            <a class="dropdown-item" href="/page/js/js-for.html">For</a>
+                            <a class="dropdown-item" href="js-switch.html">Switch</a>
+                            <a class="dropdown-item" href="js-while.html">While</a>
+                            <a class="dropdown-item" href="js-for.html">For</a>
                         </div>
                     </li>
                 </ul>
@@ -77,58 +77,39 @@
     </header>
 
     <div id="content" class="container shadow">
+        <h3>Lists</h3>
+        <p>A list is any information displayed or organized in a logical or linear formation.</p>
 
-        <h3>For Loop</h3>
-        <p>The for loop has the following syntax:</p>
-        <pre>
-
-    for (statement 1; statement 2; statement 3) {
-        // code block to be executed
-    }
-        </pre>
-        <p>Statement 1 is executed (one time) before the execution of the code block.</p>
-        <p>Statement 2 defines the condition for executing the code block.</p>
-        <p>Statement 3 is executed (every time) after the code block has been executed.</p>
-
-        <br><br><br>
-
-        <h6>Example:</h6>
-        <pre>
-
-    for (i = 0; i &lt; 5; i++) {
-        text += "The number is " + i + "&lt;br&gt;";
-    }
-        </pre>
-        <h6>Result:</h6>
+        <h5>Ordered List</h5>
         <p>
-            The number is 0<br>
-            The number is 1<br>
-            The number is 2<br>
-            The number is 3<br>
-            The number is 4<br>
+            An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag.<br>
+            Used to group a set of related items in a specific order.
         </p>
+        <p>The list items will be marked with numbers by default:</p>
+        <ol>
+            <li>First place</li>
+            <li>Second place</li>
+            <li>Third place</li>
+        </ol>
+
+        <h5>Unordered List</h5>
         <p>
-            From the example above, you can read:
-            Statement 1 sets a variable before the loop starts (var i = 0).<br>
-            Statement 2 defines the condition for the loop to run ('i' must be less than 5).<br>
-            Statement 3 increases a value (i++) each time the code block in the loop has been executed.
+            An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag.<br>
+            Used to group a set of related items in no particular order.
         </p>
+        <p>The list items will be marked with bullets (small black circles) by default:</p>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
 
         <hr>
 
         <h3>Pop Quiz!</h3>
         <p>
-            What will be the value of 'count'?
+            What is the correct way to create a numbered list?
         </p>
-
-        <pre>
-
-    var count = 0;
-
-    for (i = 0; i &lt; 5; i++) {
-        count += i;
-    }
-        </pre>
         <div>
             <a class="btn btn-primary" data-toggle="collapse" href="#answer" role="button" aria-expanded="false"
                 aria-controls="answer">
@@ -138,14 +119,19 @@
 
         <pre class="collapse" id="answer">
 
-    10
+    &lt;ol&gt;
+        &lt;li&gt;Item&lt;/li&gt;
+        &lt;li&gt;Item&lt;/li&gt;
+        &lt;li&gt;Item&lt;/li&gt;
+    &lt;/ol&gt;
         </pre>
 
         <hr>
     </div>
+
     <footer id="footer">
         <div class="container text-center">
-            <img src="/images/logo/logo-webdev-gray.png" alt="" height="25px">
+            <img src="../images/logo/logo-webdev-gray.png" alt="" height="25px">
             <p>ManoSites © Copyright 2019-2025. All Rights Reserved.</p>
         </div>
     </footer>

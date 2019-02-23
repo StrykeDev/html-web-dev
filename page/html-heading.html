@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>
-        HTML - Lists
+        HTML - Heading
     </title>
     <meta name="description" content="Free web development training.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -29,12 +29,12 @@
 <body>
     <header id="header">
         <nav class="navbar navbar-expand-sm">
-            <a class="navbar-brand" href="/index.html">
-                <img class="logo" src="/images/logo/logo-webdev.png" alt="" height="32px">
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../images/logo/logo-webdev.png" alt="" height="32px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="/images/misc/menu-btn.png" alt="" height="32px">
+                <img src="../images/misc/menu-btn.png" alt="" height="32px">
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,8 +45,8 @@
                             HTML
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/html/html-heading.html">Heading</a>
-                            <a class="dropdown-item" href="/page/html/html-lists.html">Lists</a>
+                            <a class="dropdown-item" href="html-heading.html">Heading</a>
+                            <a class="dropdown-item" href="html-lists.html">Lists</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -55,9 +55,9 @@
                             CSS
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/css/css-background.html">Background</a>
-                            <a class="dropdown-item" href="/page/css/css-colors.html">Colors</a>
-                            <a class="dropdown-item" href="/page/css/css-links.html">Links</a>
+                            <a class="dropdown-item" href="css-background.html">Background</a>
+                            <a class="dropdown-item" href="css-colors.html">Colors</a>
+                            <a class="dropdown-item" href="css-links.html">Links</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -66,9 +66,9 @@
                             JavaScript
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/js/js-switch.html">Switch</a>
-                            <a class="dropdown-item" href="/page/js/js-while.html">While</a>
-                            <a class="dropdown-item" href="/page/js/js-for.html">For</a>
+                            <a class="dropdown-item" href="js-switch.html">Switch</a>
+                            <a class="dropdown-item" href="js-while.html">While</a>
+                            <a class="dropdown-item" href="js-for.html">For</a>
                         </div>
                     </li>
                 </ul>
@@ -77,38 +77,31 @@
     </header>
 
     <div id="content" class="container shadow">
-        <h3>Lists</h3>
-        <p>A list is any information displayed or organized in a logical or linear formation.</p>
-
-        <h5>Ordered List</h5>
+        <h3>H1-6 Headings</h3>
         <p>
-            An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag.<br>
-            Used to group a set of related items in a specific order.
+            The &lt;h1&gt; to &lt;h6&gt; tags are used to define HTML headings.<br>
+            &lt;h1&gt; tag should be used for main headings, followed by &lt;h2&gt;, then the less important &lt;h3&gt;,
+            and so on.
         </p>
-        <p>The list items will be marked with numbers by default:</p>
-        <ol>
-            <li>First place</li>
-            <li>Second place</li>
-            <li>Third place</li>
-        </ol>
-
-        <h5>Unordered List</h5>
         <p>
-            An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag.<br>
-            Used to group a set of related items in no particular order.
+            Users skim your pages by its headings so it is important to use headings to show the document structure.
         </p>
-        <p>The list items will be marked with bullets (small black circles) by default:</p>
-        <ul>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-        </ul>
+        <h1>This is heading 1.</h1>
+        <h2>This is heading 2.</h2>
+        <h3>This is heading 3.</h3>
+        <h4>This is heading 4.</h4>
+        <h5>This is heading 5.</h5>
+        <h6>This is heading 6.</h6>
+        <p>This is a normal paragraph.</p>
+        <p class="alert alert-warning" role="alert">
+            <b>Note: </b>Use HTML headings for headings only. Don't use headings to make text BIG or bold.
+        </p>
 
         <hr>
 
         <h3>Pop Quiz!</h3>
         <p>
-            What is the correct way to create a numbered list?
+            Which header is the largest and the most important?
         </p>
         <div>
             <a class="btn btn-primary" data-toggle="collapse" href="#answer" role="button" aria-expanded="false"
@@ -119,11 +112,7 @@
 
         <pre class="collapse" id="answer">
 
-    &lt;ol&gt;
-        &lt;li&gt;Item&lt;/li&gt;
-        &lt;li&gt;Item&lt;/li&gt;
-        &lt;li&gt;Item&lt;/li&gt;
-    &lt;/ol&gt;
+    &lt;h1&gt;Title&lt;/h1&gt;
         </pre>
 
         <hr>
@@ -131,7 +120,7 @@
 
     <footer id="footer">
         <div class="container text-center">
-            <img src="/images/logo/logo-webdev-gray.png" alt="" height="25px">
+            <img src="../images/logo/logo-webdev-gray.png" alt="" height="25px">
             <p>ManoSites © Copyright 2019-2025. All Rights Reserved.</p>
         </div>
     </footer>

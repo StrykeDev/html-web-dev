@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>
-        JavaScript - Switch
+        JavaScript - For
     </title>
     <meta name="description" content="Free web development training.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -26,15 +26,15 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body onload="SwitchEx();">
+<body>
     <header id="header">
         <nav class="navbar navbar-expand-sm">
-            <a class="navbar-brand" href="/index.html">
-                <img class="logo" src="/images/logo/logo-webdev.png" alt="" height="32px">
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../images/logo/logo-webdev.png" alt="" height="32px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="/images/misc/menu-btn.png" alt="" height="32px">
+                <img src="../images/misc/menu-btn.png" alt="" height="32px">
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,8 +45,8 @@
                             HTML
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/html/html-heading.html">Heading</a>
-                            <a class="dropdown-item" href="/page/html/html-lists.html">Lists</a>
+                            <a class="dropdown-item" href="html-heading.html">Heading</a>
+                            <a class="dropdown-item" href="html-lists.html">Lists</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -55,9 +55,9 @@
                             CSS
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/css/css-background.html">Background</a>
-                            <a class="dropdown-item" href="/page/css/css-colors.html">Colors</a>
-                            <a class="dropdown-item" href="/page/css/css-links.html">Links</a>
+                            <a class="dropdown-item" href="css-background.html">Background</a>
+                            <a class="dropdown-item" href="css-colors.html">Colors</a>
+                            <a class="dropdown-item" href="css-links.html">Links</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -66,9 +66,9 @@
                             JavaScript
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/page/js/js-switch.html">Switch</a>
-                            <a class="dropdown-item" href="/page/js/js-while.html">While</a>
-                            <a class="dropdown-item" href="/page/js/js-for.html">For</a>
+                            <a class="dropdown-item" href="js-switch.html">Switch</a>
+                            <a class="dropdown-item" href="js-while.html">While</a>
+                            <a class="dropdown-item" href="js-for.html">For</a>
                         </div>
                     </li>
                 </ul>
@@ -76,95 +76,57 @@
         </nav>
     </header>
 
-    <div id="content" class="container shadow" >
-        <script>
-            function SwitchEx() {
-                switch (new Date().getDay()) {
-                    case 0:
-                        day = "Sunday";
-                        break;
-                    case 1:
-                        day = "Monday";
-                        break;
-                    case 2:
-                        day = "Tuesday";
-                        break;
-                    case 3:
-                        day = "Wednesday";
-                        break;
-                    case 4:
-                        day = "Thursday";
-                        break;
-                    case 5:
-                        day = "Friday";
-                        break;
-                    case 6:
-                        day = "Saturday";
-                }
-                document.getElementById("switch-ex-result").innerHTML = day;
-            }
-        </script>
-        <h3>Switch</h3>
-        <p>The switch statement is used to perform different actions based on different conditions.</p>
-        <p>
-            The switch expression is evaluated once.<br>
-            The value of the expression is compared with the values of each case.<br>
-            If there is a match, the associated block of code is executed.<br>
-        </p>
+    <div id="content" class="container shadow">
+
+        <h3>For Loop</h3>
+        <p>The for loop has the following syntax:</p>
+        <pre>
+
+    for (statement 1; statement 2; statement 3) {
+        // code block to be executed
+    }
+        </pre>
+        <p>Statement 1 is executed (one time) before the execution of the code block.</p>
+        <p>Statement 2 defines the condition for executing the code block.</p>
+        <p>Statement 3 is executed (every time) after the code block has been executed.</p>
+
+        <br><br><br>
 
         <h6>Example:</h6>
-        <p>
-            The getDay() method returns the weekday as a number between 0 and 6. (Sunday=0, Monday=1, Tuesday=2 ..)<br>
-            This example uses the weekday number to calculate the weekday name:
-        </p>
         <pre>
-            
-    switch (new Date().getDay()) {
-        case 0:
-            day = "Sunday";
-            break;
-        case 1:
-            day = "Monday";
-            break;
-        case 2:
-            day = "Tuesday";
-            break;
-        case 3:
-            day = "Wednesday";
-            break;
-        case 4:
-            day = "Thursday";
-            break;
-        case 5:
-            day = "Friday";
-            break;
-        case 6:
-            day = "Saturday";
+
+    for (i = 0; i &lt; 5; i++) {
+        text += "The number is " + i + "&lt;br&gt;";
     }
         </pre>
         <h6>Result:</h6>
-        <p id="switch-ex-result"></p>
+        <p>
+            The number is 0<br>
+            The number is 1<br>
+            The number is 2<br>
+            The number is 3<br>
+            The number is 4<br>
+        </p>
+        <p>
+            From the example above, you can read:
+            Statement 1 sets a variable before the loop starts (var i = 0).<br>
+            Statement 2 defines the condition for the loop to run ('i' must be less than 5).<br>
+            Statement 3 increases a value (i++) each time the code block in the loop has been executed.
+        </p>
 
         <hr>
 
         <h3>Pop Quiz!</h3>
         <p>
-            What will be the value of 'drink' after the switch statement?
+            What will be the value of 'count'?
         </p>
+
         <pre>
 
-    switch (1) {
-    case 0:
-        drink = "Coffee"
-        break;
+    var count = 0;
 
-    case 1:
-        drink = "Tea";
-        break;
-
-    case 2:
-        drink = "Milk";
-        break;
+    for (i = 0; i &lt; 5; i++) {
+        count += i;
     }
         </pre>
         <div>
@@ -176,15 +138,14 @@
 
         <pre class="collapse" id="answer">
 
-    Tea
+    10
         </pre>
 
         <hr>
     </div>
-
     <footer id="footer">
         <div class="container text-center">
-            <img src="/images/logo/logo-webdev-gray.png" alt="" height="25px">
+            <img src="../images/logo/logo-webdev-gray.png" alt="" height="25px">
             <p>ManoSites © Copyright 2019-2025. All Rights Reserved.</p>
         </div>
     </footer>
