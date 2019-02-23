@@ -1,7 +1,5 @@
 
 body {
-    padding-bottom:100px;
-
     font-family: Calibri, sans-serif;
     color: #000000;
     
@@ -29,12 +27,6 @@ p {
 #footer {
     height: 100px;
     padding: 10px;
-
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
 
     background: linear-gradient(#ececec, #fafafa);
 }
