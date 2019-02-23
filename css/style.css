@@ -36,9 +36,8 @@ hr {
 }
 
 #content {
+    min-height: 65vh;
     padding: 50px 25px 100px 25px;
-    bottom: 0px;
-    min-height: 100%;
     background-color: #fafafa;
 }
 
