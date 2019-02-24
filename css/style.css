@@ -19,9 +19,11 @@ hr {
     margin: 100px 0px 100px 0px !important;
 }
 
+
 #header {
     background: linear-gradient(#fafafa, #ececec);
 }
+
 
 #footer {
     height: 100px;
@@ -35,11 +37,13 @@ hr {
     font-size: 8pt;
 }
 
+
 #content {
     min-height: 65vh;
     padding: 50px 25px 100px 25px;
     background-color: #fafafa;
 }
+
 
 #banner {
     height: 200px;
@@ -52,11 +56,13 @@ hr {
     border-bottom-color: rgb(0, 123, 255);
 }
 
+
 .cards img {
     width: 100%;
     max-width: 200px;
     padding-bottom: 20px; 
 }
+
 
 pre {
     padding: 1px;
